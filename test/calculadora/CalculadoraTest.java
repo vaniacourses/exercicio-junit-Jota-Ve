@@ -38,7 +38,7 @@ public class CalculadoraTest {
 	@Test
 	public void testDivisaoPorZero() {
 		try {
-			int divisao = calc.divisao(8, 0);
+			calc.divisao(8, 0);
 			fail("Exceção não lançada");
 		}catch (ArithmeticException e) {
 			assertEquals("/ by zero", e.getMessage());
